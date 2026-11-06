@@ -1,0 +1,30 @@
+{
+  "name": "ai-chatbot-js",
+  "version": "1.0.0",
+  "description": "CampusBuddy: a campus help-desk chatbot with rule-based replies, TF-IDF intent matching and conversation memory",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "cli": "node src/cli.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "chatbot",
+    "nlp",
+    "tf-idf",
+    "intent-classification",
+    "express"
+  ],
+  "author": "Mohammed Emad ALaini",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}

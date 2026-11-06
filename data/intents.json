@@ -1,0 +1,498 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "assalam o alaikum",
+        "salam",
+        "hey there",
+        "hi bot",
+        "is anyone there"
+      ],
+      "responses": [
+        "Hello{name_comma}! I'm CampusBuddy, the campus help-desk assistant. Ask me about admissions, fees, exams, the library, hostels and more.",
+        "Hi{name_comma}! How can I help you today?"
+      ],
+      "suggestions": [
+        "Library timings",
+        "Fee structure",
+        "Exam schedule"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "talk to you later",
+        "i am leaving",
+        "allah hafiz",
+        "that's all",
+        "exit chat"
+      ],
+      "responses": [
+        "Goodbye{name_comma}! Good luck with your studies.",
+        "See you later{name_comma}! Come back anytime."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "thanks a lot",
+        "that was helpful",
+        "great help",
+        "jazakallah",
+        "appreciate it"
+      ],
+      "responses": [
+        "You're welcome{name_comma}!",
+        "Happy to help{name_comma}. Anything else?"
+      ]
+    },
+    {
+      "tag": "bot_identity",
+      "patterns": [
+        "who are you",
+        "who made you",
+        "your name",
+        "are you a human",
+        "are you a robot",
+        "are you a bot",
+        "what can you do",
+        "what can you help me with",
+        "what do you do"
+      ],
+      "responses": [
+        "I'm CampusBuddy, a rule-based + intent-matching chatbot. I answer common campus questions: admissions, fees, scholarships, exams, timetable, library, hostel, transport, Wi-Fi, LMS and more."
+      ],
+      "suggestions": [
+        "Admissions",
+        "Scholarships",
+        "Wi-Fi"
+      ]
+    },
+    {
+      "tag": "admissions",
+      "patterns": [
+        "how do i apply for admission",
+        "admission process",
+        "when do admissions open",
+        "admission requirements",
+        "how to get admission",
+        "entry test for admission",
+        "eligibility criteria for bs",
+        "admission deadline",
+        "documents needed for admission"
+      ],
+      "responses": [
+        "Admissions open twice a year (Fall and Spring). Apply online on the admissions portal, upload your matric/intermediate results and CNIC/B-form, then sit the entry test or submit a valid test score. Merit lists are published about two weeks after the test."
+      ],
+      "suggestions": [
+        "Fee structure",
+        "Scholarships",
+        "Entry test"
+      ],
+      "context_set": "admissions"
+    },
+    {
+      "tag": "entry_test",
+      "patterns": [
+        "entry test syllabus",
+        "what is in the entry test",
+        "entry test pattern",
+        "entry test date",
+        "how to prepare for entry test"
+      ],
+      "responses": [
+        "The entry test is 100 MCQs in 90 minutes: English, mathematics, analytical reasoning and a subject section. Sample papers are on the admissions page and there is no negative marking."
+      ]
+    },
+    {
+      "tag": "admissions_documents",
+      "patterns": [
+        "what documents",
+        "which documents are needed",
+        "documents required",
+        "what papers do i need"
+      ],
+      "context_filter": "admissions",
+      "responses": [
+        "For admission you need: matric and intermediate result cards (or result awaiting slip), CNIC or B-form, 2 passport-size photos, and a domicile copy. Originals are checked at the time of joining."
+      ]
+    },
+    {
+      "tag": "fee_structure",
+      "patterns": [
+        "what is the fee",
+        "fee structure",
+        "how much is the semester fee",
+        "tuition fee",
+        "fee for bs software engineering",
+        "how much does it cost",
+        "fee installments",
+        "can i pay fee in installments"
+      ],
+      "responses": [
+        "Semester fees depend on the program and are listed on the fee schedule in the student portal. Fees can be paid in up to two installments per semester; the first is due before classes start. A late fee is charged after the due date."
+      ],
+      "suggestions": [
+        "Scholarships",
+        "Fee challan",
+        "Refund policy"
+      ]
+    },
+    {
+      "tag": "fee_challan",
+      "patterns": [
+        "how do i get my fee challan",
+        "download challan",
+        "where is my fee voucher",
+        "fee voucher",
+        "print challan"
+      ],
+      "responses": [
+        "Log in to the student portal → Finance → Fee Vouchers. Download the challan PDF and pay at any partner bank branch or through online banking using the voucher number."
+      ]
+    },
+    {
+      "tag": "refund_policy",
+      "patterns": [
+        "refund policy",
+        "can i get my fee back",
+        "fee refund",
+        "withdraw and get refund"
+      ],
+      "responses": [
+        "Fee refunds follow the HEC policy: 100 % refund until the 7th day of classes, 50 % until the 15th day, and no refund after that (admission fee is non-refundable)."
+      ]
+    },
+    {
+      "tag": "scholarships",
+      "patterns": [
+        "scholarships",
+        "is there any scholarship",
+        "financial aid",
+        "merit scholarship",
+        "need based scholarship",
+        "how to apply for scholarship",
+        "fee concession",
+        "discount on fee"
+      ],
+      "responses": [
+        "There are merit scholarships (based on entry test / CGPA), need-based scholarships (apply with family income documents), and sibling / Hafiz-e-Quran concessions. Applications open in the first month of each semester from the Financial Aid office."
+      ],
+      "suggestions": [
+        "Fee structure",
+        "Contact office"
+      ]
+    },
+    {
+      "tag": "exam_schedule",
+      "patterns": [
+        "when are the exams",
+        "exam schedule",
+        "midterm dates",
+        "final exam date",
+        "date sheet",
+        "when is the final exam",
+        "exam timetable"
+      ],
+      "responses": [
+        "Midterms are held in week 8 and finals in week 16 of the semester. The official date sheet is posted on the LMS and the notice boards about two weeks before exams."
+      ],
+      "suggestions": [
+        "Grading policy",
+        "Timetable"
+      ]
+    },
+    {
+      "tag": "grading",
+      "patterns": [
+        "grading policy",
+        "how is gpa calculated",
+        "what is the passing grade",
+        "cgpa calculation",
+        "grading criteria",
+        "how are marks divided"
+      ],
+      "responses": [
+        "Typical weightage: quizzes & assignments 25 %, midterm 25 %, final 50 %. Grades map to grade points (A = 4.0 … D = 1.0, F = 0). GPA = Σ(grade points × credit hours) / Σ credit hours. A minimum CGPA of 2.0 is needed to stay in good standing."
+      ]
+    },
+    {
+      "tag": "timetable",
+      "patterns": [
+        "class timetable",
+        "where can i see my timetable",
+        "class schedule",
+        "when is my class",
+        "time table",
+        "timetable",
+        "my timetable"
+      ],
+      "responses": [
+        "Your personal timetable is on the student portal under Academics → Timetable. Room changes are announced on the LMS course page."
+      ]
+    },
+    {
+      "tag": "course_registration",
+      "patterns": [
+        "how to register courses",
+        "course registration",
+        "add drop courses",
+        "enroll in a course",
+        "when is course registration",
+        "drop a course"
+      ],
+      "responses": [
+        "Course registration opens one week before the semester on the student portal. You can add or drop courses during the first two weeks; after that a course can only be withdrawn (W grade)."
+      ]
+    },
+    {
+      "tag": "library_hours",
+      "patterns": [
+        "library timings",
+        "when does the library open",
+        "library hours",
+        "is the library open",
+        "what time does the library close",
+        "library time"
+      ],
+      "responses": [
+        "The main library is open Monday to Friday 8:00 AM – 8:00 PM, and Saturday 9:00 AM – 2:00 PM. During exam weeks it stays open until 10:00 PM."
+      ],
+      "suggestions": [
+        "Borrow books",
+        "Library on weekends"
+      ],
+      "context_set": "library"
+    },
+    {
+      "tag": "library_weekend",
+      "patterns": [
+        "what about weekends",
+        "and on sunday",
+        "is it open on sunday",
+        "weekend timing",
+        "library on weekends",
+        "open on saturday"
+      ],
+      "context_filter": "library",
+      "responses": [
+        "The library is closed on Sundays and public holidays. On Saturdays it's open 9:00 AM – 2:00 PM."
+      ]
+    },
+    {
+      "tag": "library_borrow",
+      "patterns": [
+        "how many books can i borrow",
+        "borrow books",
+        "issue a book",
+        "return a book",
+        "library card",
+        "late fine on books"
+      ],
+      "responses": [
+        "With your student card you can borrow up to 3 books for 14 days. Renew online through the library portal. The late fine is Rs. 20 per book per day."
+      ]
+    },
+    {
+      "tag": "hostel",
+      "patterns": [
+        "hostel",
+        "is there a hostel",
+        "hostel facility",
+        "accommodation",
+        "hostel fee",
+        "how to apply for hostel",
+        "boys hostel",
+        "girls hostel"
+      ],
+      "responses": [
+        "Separate hostels are available for male and female students, allotted on a first-come basis. Apply through the Hostel Office with your admission letter; rooms are shared (2–3 students) and include mess and Wi-Fi."
+      ]
+    },
+    {
+      "tag": "transport",
+      "patterns": [
+        "transport",
+        "university bus",
+        "bus routes",
+        "point service",
+        "is there a bus",
+        "pick and drop",
+        "bus timing"
+      ],
+      "responses": [
+        "University buses run on fixed routes across the city. Morning pick-up starts around 7:00 AM and the return leaves campus at 2:30 PM and 5:00 PM. Register for a bus card at the Transport Office."
+      ]
+    },
+    {
+      "tag": "cafeteria",
+      "patterns": [
+        "cafeteria",
+        "where can i eat",
+        "food on campus",
+        "canteen",
+        "is there a cafe",
+        "lunch"
+      ],
+      "responses": [
+        "The main cafeteria is next to the central lawn and is open 8:30 AM – 6:00 PM. There are also tea stalls near the engineering block."
+      ]
+    },
+    {
+      "tag": "wifi",
+      "patterns": [
+        "wifi",
+        "how to connect to wifi",
+        "wifi password",
+        "internet on campus",
+        "wifi not working",
+        "connect to internet"
+      ],
+      "responses": [
+        "Connect to the campus Wi-Fi network and sign in with your student ID and portal password. If it fails, forget the network and reconnect; still not working? Visit the IT Help Desk."
+      ],
+      "suggestions": [
+        "IT help desk",
+        "LMS password"
+      ]
+    },
+    {
+      "tag": "lms_password",
+      "patterns": [
+        "forgot lms password",
+        "reset password",
+        "cannot login to portal",
+        "lms login problem",
+        "portal password",
+        "account locked"
+      ],
+      "responses": [
+        "Use \"Forgot password\" on the portal login page — a reset link goes to your university email. If your account is locked, the IT Help Desk can unlock it with your student card."
+      ]
+    },
+    {
+      "tag": "it_support",
+      "patterns": [
+        "it help desk",
+        "it support",
+        "computer lab",
+        "lab timings",
+        "printer not working",
+        "technical support"
+      ],
+      "responses": [
+        "The IT Help Desk is in the main admin block, open 9:00 AM – 5:00 PM on weekdays. Computer labs are open until 6:00 PM for students with lab access."
+      ]
+    },
+    {
+      "tag": "departments",
+      "patterns": [
+        "which departments",
+        "programs offered",
+        "what courses do you offer",
+        "list of programs",
+        "do you offer software engineering",
+        "computer science program"
+      ],
+      "responses": [
+        "Programs include Software Engineering, Computer Science, Information Technology, Data Science, Business Administration, Electrical Engineering, and more. The full list is on the admissions page."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "contact number",
+        "how can i contact",
+        "email of admissions office",
+        "phone number",
+        "contact office",
+        "where is the admin office"
+      ],
+      "responses": [
+        "You can reach each office through the contacts page on the university website, or visit the Student Facilitation Center in the admin block (9:00 AM – 4:00 PM, Mon–Fri)."
+      ]
+    },
+    {
+      "tag": "events",
+      "patterns": [
+        "upcoming events",
+        "any events this week",
+        "societies",
+        "clubs",
+        "how to join a society",
+        "tech fest",
+        "seminars"
+      ],
+      "responses": [
+        "Events, seminars and society inductions are posted on the student affairs page and the LMS announcements. Societies hold inductions in the first month of the Fall semester."
+      ]
+    },
+    {
+      "tag": "sports",
+      "patterns": [
+        "sports facilities",
+        "is there a gym",
+        "cricket ground",
+        "football",
+        "sports week",
+        "table tennis"
+      ],
+      "responses": [
+        "Campus has a gym, cricket and football grounds, and indoor table tennis and badminton. Sports week is held every spring; register with the Sports Office."
+      ]
+    },
+    {
+      "tag": "medical",
+      "patterns": [
+        "medical center",
+        "i feel sick",
+        "doctor on campus",
+        "first aid",
+        "clinic",
+        "health center"
+      ],
+      "responses": [
+        "The campus medical center (ground floor, admin block) has a doctor on duty 9:00 AM – 4:00 PM. In an emergency, contact campus security at the main gate immediately."
+      ]
+    },
+    {
+      "tag": "lost_found",
+      "patterns": [
+        "i lost my card",
+        "lost and found",
+        "lost my phone",
+        "found someone's wallet",
+        "lost student card",
+        "duplicate card"
+      ],
+      "responses": [
+        "Check the Lost & Found desk at the security office. For a lost student card, apply for a duplicate at the Student Facilitation Center (a small fee applies)."
+      ]
+    },
+    {
+      "tag": "academic_calendar",
+      "patterns": [
+        "academic calendar",
+        "when does the semester start",
+        "semester start date",
+        "holidays",
+        "summer vacation",
+        "when is the break"
+      ],
+      "responses": [
+        "The academic calendar (semester start, add/drop, exams, holidays) is published on the website and the LMS. Fall starts in September and Spring in February; summer semester is optional."
+      ]
+    }
+  ]
+}
