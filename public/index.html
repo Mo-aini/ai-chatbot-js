@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusBuddy - Campus Help Desk Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="avatar">CB</div>
+      <div>
+        <h1>CampusBuddy</h1>
+        <p class="status"><span class="dot"></span> Campus help-desk assistant</p>
+      </div>
+      <button id="reset" class="ghost" title="Clear conversation">New chat</button>
+    </header>
+
+    <section id="messages" class="messages" aria-live="polite"></section>
+
+    <div id="chips" class="chips"></div>
+
+    <form id="form" class="composer" autocomplete="off">
+      <input id="input" type="text" maxlength="500" placeholder="Ask about admissions, fees, exams, library..." required>
+      <button type="submit">Send</button>
+    </form>
+    <label class="debug"><input type="checkbox" id="showMeta" checked> show matched intent &amp; confidence</label>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
